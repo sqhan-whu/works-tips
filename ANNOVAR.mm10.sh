@@ -1,7 +1,7 @@
 solve 3 problem:
 1. sites  filter snp
 2. get sites location region (UTR/CDS/intron and so on)
-3. get mutation tyope for coden sequence
+3. get mutation type for coden sequence
 
 ### how to use ANNOVAR for sites annotation.  example for mm10  ensGene VM24 version
 ### 0. download mm10 database
