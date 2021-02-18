@@ -15,6 +15,11 @@ perl retrieve_seq_from_fasta.pl GRmm38db/mm10_ensGene.txt -seqdir GRmm38db/mm10_
 ### same as above 
 #perl retrieve_seq_from_fasta.pl -format genericGene -seqfile GRmm38db/mm10_seq/mm10.fa -outfile GRmm38db/mm10_wgEncodeGencodeBasicVM24Mrna.fa GRmm38db/mm10_ensGene.txt
 
-### 1.2 download mm10 snp database Version snp142
-perl annotate_variation.pl -downdb -buildver mm10 -webfrom ucsc snp142 GRmm38db
+### 1.2 download mm10 snp database Version snp142;  2 type snp,  total snp / Common snp  ~  10 / 1,     Common recommend
+#perl annotate_variation.pl -downdb -buildver mm10 -webfrom ucsc snp142 GRmm38db
+perl annotate_variation.pl -downdb -buildver mm10 -webfrom ucsc snp142Common GRmm38db
+
+cd ~/scratch/20201122_A_I/HISAT2/process/mutation/ANNOVAR
+#perl ~/project/opt/annovar/annotate_variation.pl -filter -out out.common -build mm10 -dbtype snp142 annovar.36546.input ~/project/opt/annovar/GRmm38db
+perl ~/project/opt/annovar/annotate_variation.pl -filter -out out.common -build mm10 -dbtype snp142Common annovar.36546.input ~/project/opt/annovar/GRmm38db
 
