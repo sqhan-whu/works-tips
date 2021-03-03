@@ -6,7 +6,7 @@ Chain File from mm10 (GRCm38) to mm9 and all other organisms: http://hgdownload.
 #### download translation files
 http://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg19.over.chain.gz
 
-##需求hg19转化成hg18版本
+##需求hg19转化成hg38版本
  gunzip hg19ToHg38.over.chain.gz  #解压chain文件
 /home/soft/liftOver /home/data/all.mp.hg19.bed /home/soft/hg19ToHg38.over.chain all.mp.hg19tohg38.bed unmapped
 #liftOver [1] [2] [3] [4] 
